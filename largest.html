@@ -1,0 +1,58 @@
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+var numOne = prompt("Number please... (1/4)");
+var numTwo = prompt("Number please... (2/4)");
+var numThree = prompt("Number please... (3/4)");
+var numFour = prompt("Number please... (4/4)");
+var nO = parseInt(numOne);
+var nTw = parseInt(numTwo);
+var nTh = parseInt(numThree);
+var nF = parseInt(numFour);
+
+while (true) {
+    if (nO > nTw && nO > nTh && nO > nF)
+{
+    document.write("The largerst number is " + nO);
+    break;
+}
+else if (nTw > nO && nTw > nTh && nTw > nF)
+{
+    document.write("The largerst number is " + nTw);   
+    break;
+}
+else if (nTh > nO && nTh > nTw && nTh > nF)
+{
+    document.write("The largerst number is " + nTh);   
+    break;
+}
+
+else if (nF > nO && nF > nTw && nF > nTh)
+{
+    document.write("The largerst number is " + nF);  
+    break;   
+}
+else
+{
+    alert("Please enter four different numbers.");    
+
+numOne = prompt("Number please... (1/4)");
+numTwo = prompt("Number please... (2/4)");
+numThree = prompt("Number please... (3/4)");
+numFour = prompt("Number please... (4/4)");
+nO = parseInt(numOne);
+nTw = parseInt(numTwo);
+nTh = parseInt(numThree);
+nF = parseInt(numFour);
+}    
+}
+
+
+    </script>
+  </body>
+</html>
